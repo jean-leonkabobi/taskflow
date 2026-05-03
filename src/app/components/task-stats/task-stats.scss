@@ -1,0 +1,29 @@
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.stat-card {
+  background: var(--stat-bg, white);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-card p {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 8px 0 0;
+}
+
+.stat-card.todo p { color: #007bff; }
+.stat-card.in-progress p { color: #ffc107; }
+.stat-card.done p { color: #28a745; }
+
+.dark-theme .stat-card {
+  --stat-bg: #2d2d2d;
+  color: #fff;
+}

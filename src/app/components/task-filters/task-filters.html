@@ -1,0 +1,20 @@
+<div class="filters">
+  <select (change)="onFilterChange('status', $event)">
+    <option value="">Tous les statuts</option>
+    <option value="todo">À faire</option>
+    <option value="in-progress">En cours</option>
+    <option value="done">Terminé</option>
+  </select>
+
+  <select (change)="onFilterChange('priority', $event)">
+    <option value="">Toutes les priorités</option>
+    <option value="high">Haute</option>
+    <option value="medium">Moyenne</option>
+    <option value="low">Basse</option>
+  </select>
+
+  <input
+    type="text"
+    placeholder="Assigné à..."
+    (input)="onFilterChange('assignedTo', $event)">
+</div>

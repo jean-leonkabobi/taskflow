@@ -1,0 +1,39 @@
+<div class="modal-overlay" (click)="close.emit()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <h2>{{ task ? 'Modifier' : 'Nouvelle' }} tâche</h2>
+    <form (submit)="onSubmit()">
+      <div class="form-group">
+        <label>Titre</label>
+        <input type="text" [(ngModel)]="title" name="title" required>
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea [(ngModel)]="description" name="description" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Statut</label>
+        <select [(ngModel)]="status" name="status">
+          <option value="todo">À faire</option>
+          <option value="in-progress">En cours</option>
+          <option value="done">Terminé</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Priorité</label>
+        <select [(ngModel)]="priority" name="priority">
+          <option value="low">Basse</option>
+          <option value="medium">Moyenne</option>
+          <option value="high">Haute</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Assigné à</label>
+        <input type="text" [(ngModel)]="assignedTo" name="assignedTo">
+      </div>
+      <div class="form-actions">
+        <button type="button" class="cancel-btn" (click)="close.emit()">Annuler</button>
+        <button type="submit" class="save-btn">{{ task ? 'Modifier' : 'Créer' }}</button>
+      </div>
+    </form>
+  </div>
+</div>

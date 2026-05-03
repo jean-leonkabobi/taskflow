@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<app-task-stats></app-task-stats>
+<app-task-filters (filterChange)="onFilterChange($event)"></app-task-filters>
+
+<div class="board-actions">
+  <button class="add-btn" (click)="openAddForm()">
+    <span class="material-symbols-outlined">add</span>
+    Nouvelle tâche
+  </button>
+</div>
+
+<app-task-form
+  *ngIf="showForm"
+  [task]="editingTask"
+  (save)="onSaveTask($event)"
+  (close)="closeForm()">
+</app-task-form>
+
+<div class="kanban-board">
+  <div class="kanban-column" *ngFor="let column of columns">
+    <h3 class="column-title">{{ column.title }}</h3>
+    <app-task-card
+      *ngFor="let task of getTasksByStatus(column.status)"
+      [task]="task"
+      (edit)="onEditTask($event)"
+      (delete)="onDeleteTask($event)">
+    </app-task-card>
+    <p class="empty" *ngIf="getTasksByStatus(column.status).length === 0">
+      Aucune tâche
+    </p>
+  </div>
+</div>

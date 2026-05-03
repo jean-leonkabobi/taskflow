@@ -1,0 +1,153 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-primary, #f0f2f5);
+}
+
+.auth-card {
+  background: var(--card-bg, white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+
+  &:hover {
+    background: #1e7e34;
+  }
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dark-theme .auth-card {
+  --card-bg: #2a2a2a;
+  color: #fff;
+}
+
+.dark-theme input {
+  background: #333;
+  color: #fff;
+  border-color: #444;
+}.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-primary, #f0f2f5);
+}
+
+.auth-card {
+  background: var(--card-bg, white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+
+  &:hover {
+    background: #1e7e34;
+  }
+}
+
+.error {
+  color: #dc3545;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.dark-theme .auth-card {
+  --card-bg: #2a2a2a;
+  color: #fff;
+}
+
+.dark-theme input {
+  background: #333;
+  color: #fff;
+  border-color: #444;
+}
