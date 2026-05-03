@@ -2,6 +2,13 @@
 
 Gestionnaire de tâches collaboratives développé avec Angular.
 
+![Angular](https://img.shields.io/badge/Angular-19-DD0031?logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-Style-CC6699?logo=sass&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Container-2496ED?logo=docker&logoColor=white)
+![NGINX](https://img.shields.io/badge/NGINX-Server-009639?logo=nginx&logoColor=white)
+![License](https://img.shields.io/badge/Licence-MIT-green)
+
 ## Fonctionnalités
 
 - **CRUD complet** : Créer, lire, modifier et supprimer des tâches
@@ -14,19 +21,29 @@ Gestionnaire de tâches collaboratives développé avec Angular.
 
 ## Technologies
 
-- Angular 19
-- TypeScript
-- SCSS
-- Material Symbols (icônes)
-- Docker & NGINX
+ ### Technologie | Usage
+
+ Angular 19 | Framework frontend
+
+TypeScript | Langage de programmation
+
+SCSS | Styles
+
+Material Symbols | Icônes
+
+localStorage | Stockage des données
+
+Docker | Conteneurisation
+
+NGINX | Serveur web
 
 ##  Installation
 
 ### Prérequis
 
-- Node.js 18+
+- Node.js v24.14.1
 - Angular CLI
-- Docker (optionnel)
+- Docker (vu que je voulais dockeriser mon projet...)
 
 ## Lancer en développement
 
