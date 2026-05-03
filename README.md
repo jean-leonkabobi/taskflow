@@ -9,6 +9,15 @@ Gestionnaire de tâches collaboratives développé avec Angular.
 ![NGINX](https://img.shields.io/badge/NGINX-Server-009639?logo=nginx&logoColor=white)
 ![License](https://img.shields.io/badge/Licence-MIT-green)
 
+## Aperçu
+<div align="center">
+  <img src="screenshots/Connexion_screen.png" alt="MoonRow Dashboard" width="800"/>
+</div>
+
+<div align="center">
+  <img src="screenshots/Interface_de_tache.png" alt="MoonRow Dashboard" width="800"/>
+</div>
+
 ## Fonctionnalités
 
 - **CRUD complet** : Créer, lire, modifier et supprimer des tâches
