@@ -1,59 +1,66 @@
-# Taskflow
+# TaskFlow
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.5.
+Gestionnaire de tâches collaboratives développé avec Angular.
 
-## Development server
+## Fonctionnalités
 
-To start a local development server, run:
+- **CRUD complet** : Créer, lire, modifier et supprimer des tâches
+- **Tableau Kanban** : 3 colonnes (À faire, En cours, Terminé)
+- **Authentification** : Inscription et connexion (localStorage)
+- **Filtres** : Par statut, priorité et personne assignée
+- **Statistiques** : Nombre de tâches par statut en temps réel
+- **Icônes Material Symbols** : Interface moderne et épurée
+- **Docker** : Conteneurisation avec NGINX
 
-```bash
+## Technologies
+
+- Angular 19
+- TypeScript
+- SCSS
+- Material Symbols (icônes)
+- Docker & NGINX
+
+##  Installation
+
+### Prérequis
+
+- Node.js 18+
+- Angular CLI
+- Docker (optionnel)
+
+## Lancer en développement
+
+### Cloner le projet
+git clone https://github.com/jean-leonkabobi/taskflow.git
+cd taskflow
+
+### Installer les dépendances
+npm install
+
+### Lancer le serveur de développement
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+### Ouvrir http://localhost:4200
 
-## Code scaffolding
+### Construire l'image
+docker build -t taskflow .
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Lancer le conteneur
+docker run -d -p 8080:80 --name taskflow taskflow
 
-```bash
-ng generate component component-name
-```
+### Ouvrir http://localhost:8080
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Utilisation
+Inscription : Créez un compte avec un nom d'utilisateur, email et mot de passe
 
-```bash
-ng generate --help
-```
+Connexion : Connectez-vous avec vos identifiants
 
-## Building
+Créer une tâche : Cliquez sur "Nouvelle tâche" et remplissez le formulaire
 
-To build the project run:
+Gérer les tâches : Modifiez ou supprimez des tâches via les boutons
 
-```bash
-ng build
-```
+Filtrer : Utilisez les filtres en haut pour affiner l'affichage
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Suivre : Consultez les statistiques pour voir la progression
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Mes contacts : Jean-Leon KABOBI     kabobi.jeanleon.dev@gmail.com
